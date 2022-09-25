@@ -76,6 +76,7 @@ if __name__ == "__main__":
     # 目标点按照Y排序
     # sort by y axis
     points.sort(key = lambda x:x[1], reverse=False)
+    # 获取最下面两个点
     # 区分左右
     # identify whether the point is left or right
     if points[-2][0] < points[-1][0]:
