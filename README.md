@@ -5,4 +5,6 @@ Methodolgy: First, read and resize the picture. Then store the picture in tubes 
 
 What did you try and why do you think it did not work: I spent a lot of time on searching tutorial about RGB, HSV, image moments and other opencv stuff. For the first try, I tried to simply extract all red parts of the image, then recognize and combine red points on two lines. But there are two major interference misleading the machine when recognizing all red parts since these interferences are also red (doors and "EXIT" sign). Then I learned about cv2.moments to capture the features of moments and use the distance and sorting to find cloest 4 points (top 2 and bottom 2) to deal with this. This is the most difficult part for me. Then distinguish left and right points and draw two lines.
 
-What libraries are used: 1. import cv2 2. import numpy as np
+What libraries are used: 
+1. import cv2 
+2. import numpy as np
